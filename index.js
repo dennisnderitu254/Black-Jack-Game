@@ -32,12 +32,22 @@ function renderGame() {
     messageEl.textContent = message   
 }
 
+// function newCard() {
+//     console.log("Drawing a new card from the deck!")
+//     //  1. Create a card variable, and hard code its value to a number (2-11)
+//     let card = 7
+//     // 2. Add the new card to the sum variable
+//     sum += card
+//     // 3. Call startGame()
+//     startGame()
+// }
+
 function newCard() {
-    console.log("Drawing a new card from the deck!")
-    //  1. Create a card variable, and hard code its value to a number (2-11)
-    let card = 7
-    // 2. Add the new card to the sum variable
+    let card = 6
     sum += card
-    // 3. Call startGame()
-    startGame()
+
+    // Push the card to the cards array
+    cards.push(card)
+    console.log(cards)
+    renderGame()
 }
