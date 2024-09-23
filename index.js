@@ -12,7 +12,7 @@ let cardsEl = document.getElementById("cards-el")
 
 // 1. Create a function, getRandomCard(), that always returns the number 5
 function getRandomCard() {
-    return 5
+    return Math.floor( Math.random()*13 ) + 1
 }
 
 // Create a new function called startGame() that calls renderGame()
